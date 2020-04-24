@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">口算</string>
+    <string name="welcom">Welcom!!!</string>
+    <string name="image">图片</string>
+    <string name="entrance">进入</string>
+    <string name="equal">=</string>
+    <string name="wenhao">\?</string>
+    <string name="di">第</string>
+    <string name="ti">题</string>
+    <string name="num1">1</string>
+    <string name="num2">2</string>
+    <string name="num3">3</string>
+    <string name="num4">4</string>
+    <string name="num5">5</string>
+    <string name="num6">6</string>
+    <string name="num7">7</string>
+    <string name="num8">8</string>
+    <string name="num9">9</string>
+    <string name="num0">0</string>
+    <string name="remove">C</string>
+    <string name="ok">OK</string>
+    <string name="girl">girl</string>
+    <string name="cry">失败</string>
+    <string name="you_lose">You Lose!!!</string>
+    <string name="lose_grade">失败的分</string>
+    <string name="lose_back">BACK</string>
+    <string name="win_smile">胜利</string>
+    <string name="you_win">You Win!!!</string>
+    <string name="win_grade">胜利得分</string>
+    <string name="max">最高分 :%d</string>
+    <string name="please_entry">请输入答案。</string>
+    <string name="haveno">没有可撤销的。</string>
+</resources>
