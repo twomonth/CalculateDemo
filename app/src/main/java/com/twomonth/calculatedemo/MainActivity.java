@@ -5,14 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
-
 import android.content.DialogInterface;
 import android.graphics.drawable.AnimationDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.Animation;
 import android.widget.ImageView;
+
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp () {
-        if (controller.getCurrentDestination().getId() == R.id.questionFragment){
+        if (Objects.requireNonNull(controller.getCurrentDestination()).getId() == R.id.questionFragment){
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle("决定放弃吗？");
             builder.setCancelable(true);
