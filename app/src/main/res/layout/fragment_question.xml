@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:minWidth="@dimen/minWith"
+        android:background="@color/colorGreenDark"
         tools:context=".fragment.QuestionFragment">
 
         <TextView
@@ -184,7 +185,7 @@
             android:background="@drawable/text_result"
             android:gravity="right|bottom"
             android:minWidth="90dp"
-            android:textColor="@color/colorBlack"
+            android:textColor="@color/colorWhite"
             android:textSize="@dimen/text30"
             app:layout_constraintBottom_toTopOf="@+id/guideline8"
             app:layout_constraintEnd_toEndOf="@+id/textView_wh"

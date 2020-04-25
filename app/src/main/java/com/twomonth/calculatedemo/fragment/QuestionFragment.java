@@ -1,6 +1,7 @@
 package com.twomonth.calculatedemo.fragment;
 
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.databinding.DataBindingUtil;
@@ -10,6 +11,7 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import android.os.Vibrator;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,6 +28,7 @@ import com.twomonth.calculatedemo.viewmodel.MyViewModel;
 public class QuestionFragment extends Fragment {
 
     private StringBuilder anwer = new StringBuilder();
+    Vibrator vibrator;
     public QuestionFragment() {
         // Required empty public constructor
     }
@@ -41,10 +44,11 @@ public class QuestionFragment extends Fragment {
         final FragmentQuestionBinding binding = DataBindingUtil.inflate(inflater,R.layout.fragment_question,container,false);
         binding.setData(viewModel);
         binding.setLifecycleOwner(requireActivity());
-
+        vibrator = (Vibrator) requireActivity().getSystemService(Context.VIBRATOR_SERVICE);
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                vibrator.vibrate(50);
                 switch (view.getId()){
                     case R.id.button0:
                         anwer.append("0");
@@ -86,6 +90,7 @@ public class QuestionFragment extends Fragment {
                     case R.id.button_ok:
                         if (TextUtils.isEmpty(anwer)){
                             Snackbar.make(view,getResources().getString(R.string.please_entry),Snackbar.LENGTH_SHORT).show();
+                            return;
                         }
                         if (Integer.valueOf(anwer.toString()).intValue() == viewModel.getAnswer().getValue()){
                             viewModel.answerCorrect();

@@ -116,6 +116,7 @@ public class MyViewModel extends AndroidViewModel {
         getCurrentScore().setValue(getCurrentScore().getValue()+1);
         if (getCurrentScore().getValue()>getHightScore().getValue()){
             getHightScore().setValue(getCurrentScore().getValue()-1);
+            save();
             win_flag = true;
         }
         generator();
