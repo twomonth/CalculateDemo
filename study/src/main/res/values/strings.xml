@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Study</string>
+    <string name="viewmodel">viewmodel</string>
+    <string name="viewmodel_livedata">ViewModel+LiveData</string>
 </resources>

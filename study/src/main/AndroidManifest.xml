@@ -2,10 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.twomonth.study">
 
-    <application
-        android:theme="@style/AppTheme">
-        <activity android:name=".StudyListActivity">
-        </activity>
+    <application android:theme="@style/AppTheme">
+        <activity android:name=".viewmodel.AtestActivity"></activity>
+        <activity android:name=".vmlivedata.BtestActivity"></activity>
+        <activity android:name=".StudyListActivity"></activity>
     </application>
 
 </manifest>
