@@ -53,12 +53,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         if (controller.getCurrentDestination().getId() == R.id.titleFragment){
-
             ImageView imageView = findViewById(R.id.imageView_bye);
             imageView.setVisibility(View.VISIBLE);
             final AnimationDrawable animation = (AnimationDrawable) imageView.getBackground();
             animation.start();
-
             new Thread(new Runnable() {
                 @Override
                 public void run() {

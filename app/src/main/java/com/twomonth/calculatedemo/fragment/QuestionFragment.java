@@ -59,7 +59,7 @@ public class QuestionFragment extends Fragment {
                     case R.id.button2:
                         anwer.append("2");
                         break;
-                    case R.id.button3:
+                    case R.id.button_livedata:
                         anwer.append("3");
                         break;
                     case R.id.button4:

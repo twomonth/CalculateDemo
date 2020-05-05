@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Study</string>
-    <string name="viewmodel">viewmodel</string>
-    <string name="viewmodel_livedata">ViewModel+LiveData</string>
+    <string name="num">num</string>
+    <string name="lifecycle">lifecycle</string>
+    <string name="viewModel">viewModel</string>
+    <string name="liveData">LiveData</string>
+    <string name="add">add</string>
+    <string name="jian">jian</string>
 </resources>

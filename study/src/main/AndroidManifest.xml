@@ -3,9 +3,9 @@
     package="com.twomonth.study">
 
     <application android:theme="@style/AppTheme">
-        <activity android:name=".viewmodel.AtestActivity"></activity>
-        <activity android:name=".vmlivedata.BtestActivity"></activity>
-        <activity android:name=".StudyListActivity"></activity>
+        <activity android:name=".livedata.LiveDataActivity"></activity>
+        <activity android:name=".StudyListActivity" />
+        <activity android:name=".lifecycle.LifecycleActivity" />
     </application>
 
 </manifest>

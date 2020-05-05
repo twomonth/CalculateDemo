@@ -52,7 +52,7 @@
             android:textSize="@dimen/text30"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toBottomOf="@+id/textView_num" />
 
         <Button
             android:id="@+id/button_win_back"
